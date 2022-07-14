@@ -1,0 +1,158 @@
+footer {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: var(--main-padding);
+    margin-top: 160px;
+}
+footer .container {
+    padding-bottom: 72px;
+}
+footer .container .links-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+}
+footer .container .links-bar .logo {
+    width: 202px;
+    height: 27px;
+}
+footer .container .links-bar ul li {
+    display: inline-block;
+    margin-left: 42px;
+}
+footer .container .links-bar ul li a {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: var(--white);
+    transition: all var(--main-transition);
+    position: relative;
+}
+footer .container .links-bar ul li a::after,
+footer .container .links-bar ul li a::before {
+    content: "";
+    width: 0;
+    height: .5px;
+    background-color: var(--peach);
+    position: absolute;
+    transition: all var(--main-transition);
+}
+footer .container .links-bar ul li a::after {
+    bottom: -10px;
+    left: 0px;
+}
+footer .container .links-bar ul li a::before {
+    top: -10px;
+    right: 0px;
+}
+footer .container .links-bar ul li a:hover::after,
+footer .container .links-bar ul li a:hover::before {
+    width: 100%;
+}
+footer .container .main-address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .main-address address h4,
+footer .container .main-address address p  {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+    opacity: 0.5;
+}
+footer .container .main-address .icons-bar {
+    align-self: flex-end;
+}
+footer .container .main-address .icons-bar i {
+    width: 24px;
+    height: 24px;
+    color: var(--peach);
+    cursor: pointer;
+    transition: all var(--main-transition);
+    font-size: 22px;
+    line-height: 24px;
+}
+footer .container .main-address .icons-bar i:hover {
+    color: var(--light-peach);
+}
+.lets-talk {
+    position: relative;
+}
+.lets-talk .absolute {
+    position: absolute;
+    min-height: 292px;
+    background-color: var(--peach);
+    border-radius: 15px;
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lets-talk .absolute .text-box h1 {
+    max-width: 278px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+.lets-talk .absolute .text-box p {
+    max-width: 459px;
+    margin: 0px;
+}
+@media(max-width: 1024px) {
+    .lets-talk .absolute {
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width: 767px) {
+    footer .container .links-bar{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    footer .container .links-bar .logo {
+        margin-bottom: 60px;
+    }
+    footer .container .links-bar ul li {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    footer .container .main-address {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .container .main-address address {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    footer .container .main-address .icons-bar {
+        align-self: center;
+    }
+    .lets-talk .absolute {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .lets-talk .absolute .text-box {
+        text-align: center;
+    }
+    .lets-talk .absolute .text-box h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .lets-talk .absolute .text-box p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
