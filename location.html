@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/generals.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/locations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Our Locations</title>
+</head>
+<body>
+    <div class="container">
+        <header class="navigation">
+            <div class="mobile-navigation">
+                <ul>
+                    <li><a href="about.html">OUR COMPANY</a></li>
+                    <li><a href="location.html">LOCATIONS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="assets/shared/desktop/logo-dark.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="about.html">OUR COMPANY</a></li>
+                <li><a href="location.html">LOCATIONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+    </div>
+    <section class="maps">
+        <div class="container">
+            <div class="location" data-aos="fade-right">
+                <div class="text-box">
+                    <h1>Canada</h1>
+                    <div class="address">
+                        <address>
+                            <h4>Designo Central Office</h4>
+                            <p>3886 Wellington Street</p>
+                            <p>Toronto, Ontario M9C 3J5</p>
+                        </address>
+                        <address>
+                            <h4>Contact</h4>
+                            <p>P : +1 253-863-8967</p>
+                            <p>M : contact@designo.co</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="image" data-tilt>
+                    <img src="assets/locations/desktop/image-map-canada.png" alt="">
+                </div>
+            </div>
+            <div class="location" data-aos="fade-left">
+                <div class="image" data-tilt>
+                    <img src="assets/locations/desktop/image-map-australia.png" alt="">
+                </div>
+                <div class="text-box">
+                    <h1>Australia</h1>
+                    <div class="address">
+                        <address>
+                            <h4>Designo AU OFFICE</h4>
+                            <p>19 Balonne Street</p>
+                            <p>New South Wales 2443</p>
+                        </address>
+                        <address>
+                            <h4>Contact</h4>
+                            <p>P : (02) 6720 9092</p>
+                            <p>M : contact@designo.au</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="location" data-aos="fade-down">
+                <div class="text-box">
+                    <h1>United Kingdom</h1>
+                    <div class="address">
+                        <address>
+                            <h4>Designo UK Office</h4>
+                            <p>13 Colorado Way</p>
+                            <p>Rhyd-y-fro SAB 9GA</p>
+                        </address>
+                        <address>
+                            <h4>Contact</h4>
+                            <p>P : 075 3115 1400</p>
+                            <p>M : contact@designo.uk</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="image"data-tilt>
+                    <img src="assets/locations/desktop/image-map-canada.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lets-talk">
+        <div class="container absolute">
+            <div class="text-box">
+                <h1 class="h1-custom-styling">Let’s talk about your project</h1>
+                <p class="p-custom-styling">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+            </div>
+            <button class="main-button" onclick="window.location.href = 'contact.html'">GET IN TOUCH</button>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="links-bar">
+                    <div class="logo">
+                        <img src="assets/shared/desktop/logo-light.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="about.html">OUR COMPANY</a></li>
+                        <li><a href="location.html">LOCATIONS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="main-address">
+                    <address>
+                        <h4>Designo Central Office</h4>
+                        <p>3886 Wellington Street</p>
+                        <p>Toronto, Ontario M9C 3J5</p>
+                    </address>
+                    <address>
+                        <h4>Contact Us (Central Office)</h4>
+                        <h4>P : +1 253-863-8967</h4>
+                        <h4>M : contact@designo.co</h4>
+                    </address>
+                    <div class="icons-bar">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 500,
+        easing: 'linear',
+        once: false,
+        mirror: true,
+    });
+</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+<script src="javascript/main.js"></script>
+</html>
